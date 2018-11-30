@@ -9,22 +9,22 @@
   </head>
   <body>
     <h1 align="center">Triangle tracker</h1>
-    <p align ="center">To find the type of triangle,<br>Fill in th form below</p>
-    <form class="tracker" action="index.html" method="post"align="center">
-      <div class="first">
+    <p align ="center">To find the type of triangle,<br>Fill in the form below</p>
+    <form class="tracker" action="/action_page.php" method="post"align="center">
+      <div class="a">
         First Number
         <input type="number" name="First side">
       </div><br>
-      <div class="second">
+      <div class="b">
         Second side
         <input type="number" name="Second side">
       </div><br>
-      <div class="third">
+      <div class="c">
         Third side
         <input type="number" name="Third side">
       </div><br>
       <div class="submit">
-        <input type="submit" name="Submit">
+        <input type="submit" name="Submit" onclick="check();return false">
       </div>
       <div class="reset">
         <input type="reset">
