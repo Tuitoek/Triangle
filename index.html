@@ -10,7 +10,7 @@
   <body>
     <h1 align="center">Triangle tracker</h1>
     <p align ="center">To find the type of triangle,<br>Fill in the form below</p>
-    <form class="tracker" action="/action_page.php" method="post"align="center">
+    <form class="tracker"  method="post"align="center">
       <div class="a">
         First Number
         <input type="number" name="First side">
@@ -23,12 +23,12 @@
         Third side
         <input type="number" name="Third side">
       </div><br>
-      <div class="submit">
-        <input type="submit" name="Submit" onclick="check();return false">
-      </div>
       <div class="reset">
         <input type="reset">
       </div>
     </form>
+     <div id ="button">
+       <button type="button" name="Submit"></button>
+     </div>
   </body>
 </html>
