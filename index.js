@@ -4,13 +4,16 @@ var first = document.getElementById("a");
 var second = document.getElementById("b");
 var third = document.getElementById("c");
 
-if(first === second && second === third)
+if(first === second || second === third || third === first)
 {
-  alert("equilateral triangle");
+  alert("Equilateral triangle");
 }
-else (first === second && second == !third || first === third && third == !second )
+else if(first === second && second == !third || first === third && third == !second )
 {
-  alert("isosceles triangle");
+  alert("Isosceles triangle");
+}
+else if (first !== second || second !==third || third !== first){
+  alert("Scalene triangle")
 }
 
 
