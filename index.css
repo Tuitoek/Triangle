@@ -5,10 +5,13 @@ body{
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 26px;
 }
+.type{
+  color:black;
+  font-size: 16px;
+}
 .des{
-  padding-bottom: : 15px;
-  background-color: orange;
-  opacity:0.7;
+  
+  float:right;
 }
 .intro{
   color:black;
@@ -18,10 +21,4 @@ body{
 }
 submit{
   border: 20px;
-}
-.type{
-  padding-right: 10px;
-  background-color: orange;
-  opacity: 0.7;
-  color:white;
 }
