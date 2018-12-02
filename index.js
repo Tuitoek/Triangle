@@ -1,19 +1,19 @@
  var triangleTracker = function(){
 
-var first = document.getElementById("a");
-var second = document.getElementById("b");
-var third = document.getElementById("c");
+var first = document.getElementById("a").value;
+var second = document.getElementById("b").value;
+var third = document.getElementById("c").value;
 
-if(first === second || second === third || third === first)
+if(first === second && second === third && third === first)
 {
   alert("Equilateral triangle");
 }
-else if(first === second && second == !third || first === third && third == !second )
+else if(first === second || second === third || third === first)
 {
   alert("Isosceles triangle");
 }
 else if (first !== second || second !==third || third !== first){
-  alert("Scalene triangle")
+  alert("Scalene triangle");
 }
 
 
