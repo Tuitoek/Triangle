@@ -15,6 +15,9 @@ else if(first === second || second === third || third === first)
 else if (first !== second || second !==third || third !== first){
   alert("Scalene triangle");
 }
+else if ((first+second)<= third || (second+third)<= first || (third+first)<= second){
+  alert("NOT A TRIANGLE!");
+}
 
 
 };
