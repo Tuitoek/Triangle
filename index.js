@@ -1,10 +1,11 @@
  var triangleTracker = function(){
 
-var first = document.getElementById("a").value;
-var second = document.getElementById("b").value;
-var third = document.getElementById("c").value;
+var first = parseInt(document.getElementById("a").value);
+var second = parseInt(document.getElementById("b").value);
+var third = parseInt(document.getElementById("c").value);
+var triangle = [first,second,third];
 
-if (first+second > third || second+third > first || third+first> second){
+
 
 if(first === second && second === third && third === first)
 {
@@ -14,13 +15,13 @@ else if(first === second || second === third || third === first)
 {
   alert("Isosceles triangle");
 }
-else if (first !== second || second !==third || third !== first){
-  alert("Scalene triangle");
-}
-else
+else if ((first + second <= third) || (second + third <= first) || (third + first <= second))
 {
   alert("NOT A TRIANGLE!");
 }
+else if ((first + second >third) || (second + third > first) || (third + first > second)){
+  alert("Scalene triangle");
 }
+
 
 };
